@@ -22,6 +22,7 @@ const Insert = () => {
         }
         e.target.todo.value = '';
         e.target.todo.focus();
+        // as
 
     }
 

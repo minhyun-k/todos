@@ -10,7 +10,7 @@ const List = () => {
         dataCtrl({type:'get'});
     },[]);
 
-    if(!sortData.length) return<>loading...</>
+    if(!sortData.length ) return<>loading...</>
 
   return (
     <ul>

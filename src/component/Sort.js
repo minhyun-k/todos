@@ -8,7 +8,9 @@ const Sort = () => {
     useEffect(()=>{
         sortCtrl({type});
     },[data, type])
-
+    console.log(sortData)
+  if(!sortData.length){<div>loading...</div>}
+  else{
   return (
         <div className='footer'>
                 <div>{sortData.length} items</div>
@@ -19,6 +21,7 @@ const Sort = () => {
                 </div>
         </div>
   )
+}
 }
 
 export default Sort

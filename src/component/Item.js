@@ -18,7 +18,7 @@ const Item = ({obj}) => {
                 </p>
             <button onClick={()=>dataCtrl({type:'delete',data:obj.id})}> X </button>
         </li>
-  )
+)
 }
 
 export default Item
