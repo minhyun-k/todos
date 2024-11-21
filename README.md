@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- logo -->
-<img src="[https://github.com/minhyun-k/Book-IEUM/blob/main/public/loading-1.png](https://github.com/minhyun-k/todos/blob/main/public/todo_thumb.jpg)" width="400" height="400"/>
+<img src="(https://github.com/minhyun-k/todos/blob/main/public/todo_thumb.jpg)" width="400" height="400"/>
 
 ### TODOS 🖍️
 
