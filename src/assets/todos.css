@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #eee;
+  background-color: #fff;
 }
 
 * {
@@ -21,10 +21,10 @@ button {
   font-weight: 100;
   letter-spacing: 6px;
   margin: 16px 0;
-  color: #dbb6b6;
+  color: rgba(113, 27, 194, 0.6);
 }
 .todolist .wrap {
-  background-color: white;
+  background-color: rgba(79, 226, 43, 0.3);
   border-radius: 30px;
   padding: 32px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
@@ -32,6 +32,7 @@ button {
 .todolist .insert {
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
+  background-color: rgba(79, 226, 43, 0.3);
 }
 .todolist .insert input {
   width: calc(100% - 50px);
@@ -73,7 +74,7 @@ button {
   display: inline-block;
   width: 34px;
   height: 18px;
-  background-color: rgb(255, 110, 110);
+  background-color: rgba(113, 27, 194, 0.8);
   border-radius: 18px;
   margin-right: 10px;
 }
@@ -96,7 +97,7 @@ button {
 .todolist ul li button {
   background-color: transparent;
   border: none;
-  color: rgb(255, 124, 124);
+  color: rgba(113, 27, 194, 0.6);
   margin-right: 15px;
   display: none;
 }
@@ -118,6 +119,6 @@ button {
   color: #999;
 }
 .todolist .footer button:hover, .todolist .footer button.active {
-  border: 1px solid #f00;
+  border: 1px solid rgb(113, 27, 194);
   color: black;
 }
