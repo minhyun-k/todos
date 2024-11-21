@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- logo -->
-<img src="https://github.com/minhyun-k/Book-IEUM/blob/main/public/loading-1.png" width="400" height="400"/>
+<img src="https://github.com/minhyun-k/todos/blob/main/public/todo_thumb.jpg" width="400" height="400"/>
 
 ### TODOS 🖍️
 
@@ -34,30 +34,9 @@
 
 |화면 명|
 |:---:|
-|로딩 화면|
-|<img src="https://github.com/minhyun-k/Book-IEUM/blob/main/public/loading.gif" width="450"/>|
-|처음 어플리케이션 실행 시 로딩화면 출력|
-|메인 홈|
-|:---:|
-|<img src="https://github.com/minhyun-k/Book-IEUM/blob/main/public/Home.gif" width="450"/>|
-|홈 화면은 서버요청을 통해 베스트셀러, 신간 등 카테고리에 맞는 데이터가 출력되어 사용자가 도서 목록을 확인할 수 있습니다.|
-|도서목록|
-|:---:|
-|<img src="https://github.com/minhyun-k/Book-IEUM/blob/main/public/list.gif" width="450"/>|
-|홈 화면에서 각 카테고리별 더보기 클릭시, 혹은 헤더 메뉴 클릭시 각 카테고리에 맞는 도서 목록이 페이지에 출력됩니다.|
-|상세페이지|
-|:---:|
-|<img src="https://github.com/minhyun-k/Book-IEUM/blob/main/public/detail.gif" width="450"/>|
-|홈, 도서목록에서 사용자가 관심있는 도서 컨텐츠를 클릭 시, 클릭한 도서의 상세정보가 포함된 페이지가 열립니다. 이 페이지에서는 도서의 상세내용, 북마크, 코멘트 작성이 가능하며, 베스트셀러의 경우 베스트 순위, 신간의 경우 신간도서 표시가 제공됩니다.|
-|북마크 등록 및 코멘트 작성|
-|:---:|
-|<img src="https://github.com/minhyun-k/Book-IEUM/blob/main/public/detail2.gif" width="450"/>|
-|북마크 클릭시 '읽는중', '읽고싶어요' 등록 가능, firebase를 통해 각 로그인한 사용자 개인 북마크 기능 활성화, 코멘트 작성 시 별점과 리뷰(댓글형식)가 표시됩니다.|
-|마이페이지|
-|:---:|
-|<img src="https://github.com/minhyun-k/Book-IEUM/blob/main/public/mypage.gif" width="450"/>|
-|로그인 시 firebase를 사용하여, 각 사용자가 사용한 북마크와 코멘트가 출력되어 사용자의 경험, 히스토리를 확인할 수 있습니다.|
-
+|메인 화면|
+|<img src="https://github.com/minhyun-k/todos/blob/main/public/todos.gif" width="450"/>|
+|할일 목록 추가 시 express를 통한 데이터 저장 및 출력 CRUD기능을 모두 구현했습니다.|
 <br />
 
 ## ⚙ 기술 스택
@@ -110,10 +89,10 @@
 - **해결 방법**: 
   - React의 `useState`를 활용하여 상태 변화를 실시간으로 반영하고, 변경된 상태를 localStorage에도 동기화.
 
-### 3) **UI 레이아웃 깨짐 현상**
-- **문제**: 화면 크기에 따라 UI가 깨지거나 요소들이 겹치는 현상.
+### 3) **잦은 서버요청으로 인한 느려짐**
+- **문제**: 'put' 기능을 통해 수정된 내용을 express 서버에 보내고, 다시 'get'을 통해 화면에 출력할 때, 두 번의 서버 요청으로 인해 매우 느려짐.
 - **해결 방법**:
-  - CSS Flexbox 및 Grid를 사용하여 레이아웃을 정리하고, 미디어 쿼리를 사용하여 다양한 화면 크기에서 최적화된 레이아웃 제공.
+  - 수정된 내용을 서버에 보낼 때, 한번만 서버요청을 하고 그 이후 axios를 통한 전역변수 속에 직접 수정하는 함수를 담아 서버요청을 더이상 하지 않도록 했습니다. 즉, 서버측이 변경될 때, 이미 한 번 'get'을 통해 가져온 데이터를 직접 변경하여 다시 'get'을 통한 서버 요청이 이루어질 필요 없게 했습니다.
 
 
 ---
