@@ -30,14 +30,6 @@
 
 
 <br />
-## 🛠 화면 구성
-
-|화면 명|
-|:---:|
-|메인 화면|
-|<img src="https://github.com/minhyun-k/todos/blob/main/public/todos.gif" width="450"/>|
-|할일 목록 추가 시 express를 통한 데이터 저장 및 출력 CRUD기능을 모두 구현했습니다.|
-<br />
 
 ## ⚙ 기술 스택
 
